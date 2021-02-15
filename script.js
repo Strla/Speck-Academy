@@ -2,7 +2,7 @@ const input = document.querySelector("#add");
 const  btn = document.querySelector("#btn");
 const list = document.querySelector("#list");
 
-// funkcija koja omogućuje dodavanje novih proizvoda kada kliknemo gumb Dodaj
+// dodavanje novih proizvoda gumb Dodaj
 btn.onclick = function(){
 
     let txt = input.value;
@@ -16,5 +16,15 @@ btn.onclick = function(){
         input.value = '';
     }
 
+};
+
+// brisanje svih unešenih proizvoda gumb Obriši
+function deleteAll(){
+    var todo =  document.getElementById("list");
+    var lis = todo.getElementsByTagName("li");
+    console.log(lis);
+    while(lis.length > 0){
+        todo.removeChild(lis[0]);
+    }
 };
 
