@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body onload="countItems()">
 <div class="container">
     <h1>Proizvodi</h1>
 
     <div class="add-elements">
-        <input id="add" type="text" placeholder="upiši proizvod">
+        <input  id="add" type="text" placeholder="upiši proizvod">
         <button id="btn">Dodaj</button>
 
     </div>
     <div>
         <button onclick="deleteAll()" id="btn2">Obriši sve</button>
+    </div>
+
+    <div>
+        <p>Broj proizvoda u listi: <span id="myText"></span> </p>
     </div>
 
     <div class="element-list">
