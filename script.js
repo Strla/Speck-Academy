@@ -14,7 +14,7 @@ btn.onclick = function(){
         li.innerHTML = txt;
         list.insertBefore(li, list.childNodes[0]);
         input.value = '';
-        countItems()
+        countItems();
     }
 };
 
@@ -26,7 +26,7 @@ function deleteAll(){
     while(lis.length > 0){
         todo.removeChild(lis[0]);
     }
-    countItems()
+    countItems();
 }
 
 // izračun i prikaz broja proizvoda u listi
